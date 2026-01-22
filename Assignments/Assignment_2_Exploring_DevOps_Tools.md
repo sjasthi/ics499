@@ -6,7 +6,7 @@ The goal of this assignment is to help students develop the ability to quickly l
 
 ## Assignment Description
 
-Each student will be assigned one DevOps-related tool. You are expected to:
+Each student is assigned one DevOps-related tool (Please see D2L Announcements section for the tool assigned to you). You are expected to:
 
 - Research the tool and understand its purpose and use cases
 - Install or access the tool (locally, cloud, or demo version where applicable)
@@ -15,7 +15,7 @@ Each student will be assigned one DevOps-related tool. You are expected to:
 
 ## Mandatory Presentation Requirements
 
-- Presentation length: 12 to 16 slides (excluding title and references slides)
+- Presentation length: 12 to 16 slides (including title and references slides)
 - Presentation is mandatory to receive credit
 - Students will receive credit ONLY if they present to the class
 - Slides must be clear, structured, and visually readable
