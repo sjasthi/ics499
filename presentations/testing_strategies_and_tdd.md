@@ -34,45 +34,139 @@ Software quality is maintained through two complementary disciplines:
 
 ## 2. Software Testing – Types
 
-There are 35 recognized types of software testing:
+Software testing spans a wide range of techniques, each serving a distinct purpose within the development lifecycle. Rather than a flat list, it helps to understand these types by **category** — since many overlap, complement, or build upon one another. The categories below cover the original 35 types from the course material plus additional ones commonly encountered in professional software engineering.
 
-| # | Testing Type | Description |
-|---|---|---|
-| 1 | **A/B Testing** | Comparing two versions of a system to determine which performs better. |
-| 2 | **Acceptance Testing** | Validates the system against business requirements before release. |
-| 3 | **Accessibility Testing** | Ensures software is usable by people with disabilities. |
-| 4 | **Ad-hoc Testing** | Unstructured testing performed without formal plans or test cases. |
-| 5 | **Alpha Testing** | Internal testing by developers or testers before beta testing. |
-| 6 | **Beta Testing** | Testing performed by actual users in a real environment. |
-| 7 | **Black Box Testing** | Tests functionality without knowing internal code or logic. |
-| 8 | **Chaos Testing** | Introducing failures into a system to test its resilience and recovery. |
-| 9 | **Compatibility Testing** | Ensures the software works across different devices, browsers, and operating systems. |
-| 10 | **Concurrent Testing** | Testing the software with multiple users or tasks running simultaneously. |
-| 11 | **Dynamic Testing** | Tests the software during execution to find defects. |
-| 12 | **End-to-End Testing** | Tests the entire application flow from start to finish. |
-| 13 | **Exploratory Testing** | Simultaneously learning, test designing, and executing tests. |
-| 14 | **Functional Testing** | Verifies that the software functions as expected based on requirements. |
-| 15 | **Install/Uninstall Testing** | Ensures that the software installs and uninstalls correctly. |
-| 16 | **Integration Testing** | Ensures that different modules or components work together correctly. |
-| 17 | **Interactive Testing** | Involves a human tester interacting with the application to uncover issues. |
-| 18 | **Load Testing** | Tests system behavior under expected and peak user load conditions. |
-| 19 | **Mutation Testing** | Modifies a program's source code to ensure that test cases can detect changes. |
-| 20 | **Non-functional Testing** | Validates attributes like performance, usability, and reliability. |
-| 21 | **Penetration Testing** | Assesses the security of a system by simulating an attack. |
-| 22 | **Performance Testing** | Assesses how the system performs under various workloads. |
-| 23 | **Recovery Testing** | Ensures that a system can recover from crashes, hardware failures, or other major problems. |
-| 24 | **Regression Testing** | Ensures that new code changes haven't broken existing functionality. |
-| 25 | **Sanity Testing** | Quick checks to ensure basic functionality after minor code changes. |
-| 26 | **Scalability Testing** | Tests the system's ability to scale up or down in response to workload. |
-| 27 | **Security Testing** | Identifies vulnerabilities and ensures data protection and safety. |
-| 28 | **Single User Performance Testing** | Tests system performance with only one user to measure individual capacity. |
-| 29 | **Smoke Testing** | Basic testing to check if the build is stable enough for further testing. |
-| 30 | **Static Testing** | Examines code without executing it, often through code reviews. |
-| 31 | **Stress Testing** | Tests system limits under extreme load or conditions. |
-| 32 | **System Testing** | Validates the complete integrated system to ensure it meets requirements. |
-| 33 | **Unit Testing** | Tests individual components or functions in isolation. |
-| 34 | **Usability Testing** | Ensures the software is user-friendly and intuitive. |
-| 35 | **White Box Testing** | Tests internal structures or workings of an application. |
+---
+
+### 🔬 Category 1: Structural / Code-Level Testing
+
+These tests focus on *how* the code is built — its internal structure, logic, and execution paths.
+
+| Testing Type | Description |
+|---|---|
+| **Unit Testing** | Tests individual components or functions in isolation. The smallest testable unit of code. |
+| **Static Testing** | Examines code without executing it — includes code reviews, linting, and walkthroughs. |
+| **Dynamic Testing** | Tests the software during actual execution to find runtime defects. |
+| **White Box Testing** | Tests internal structures or workings of an application with full code visibility. |
+| **Black Box Testing** | Tests functionality without any knowledge of internal code or logic. |
+| **Gray Box Testing** ⭐ | A hybrid approach — the tester has *partial* knowledge of internals, enabling more targeted tests while maintaining a user-centric perspective. |
+| **Mutation Testing** | Deliberately modifies ("mutates") source code to verify that test cases can detect the changes. |
+
+> **White vs. Black vs. Gray:** Think of it as how much the tester can "see inside the box." White = full visibility, Black = none, Gray = partial.
+
+---
+
+### 🔗 Category 2: Integration Testing
+
+These tests verify that separately developed modules work correctly when combined.
+
+| Testing Type | Description |
+|---|---|
+| **Integration Testing** | Ensures that different modules or components work together correctly. |
+| **Big Bang Integration Testing** ⭐ | All modules are combined at once and tested together after individual unit testing is complete. |
+| **Top-Down Integration Testing** ⭐ | High-level modules are tested first; lower-level modules are simulated using *stubs*. |
+| **Bottom-Up Integration Testing** ⭐ | Low-level modules are tested first; higher-level modules are simulated using *drivers*. |
+| **Contract Testing** ⭐ | Verifies that interactions between services (especially microservices or APIs) conform to a shared contract. Critical in distributed/cloud architectures. |
+| **End-to-End Testing** | Tests the entire application workflow from start to finish, simulating real user scenarios. |
+| **System Testing** | Validates the complete, fully integrated system to ensure it meets all specified requirements. |
+
+---
+
+### ✅ Category 3: Functional Testing
+
+These tests validate *what* the system does — whether features behave as specified.
+
+| Testing Type | Description |
+|---|---|
+| **Functional Testing** | Verifies that the software functions as expected based on requirements. |
+| **Acceptance Testing** | Validates the system against business requirements before release. |
+| **User Acceptance Testing (UAT)** ⭐ | A formal subset of acceptance testing performed by *actual end-users* in their own environment to confirm the software meets their needs before go-live. |
+| **Regression Testing** | Ensures that new code changes haven't broken existing functionality. |
+| **Smoke Testing** | A quick, broad test to check if the build is stable enough for further testing. |
+| **Sanity Testing** | Targeted checks to confirm that specific functionality works correctly after minor code changes or bug fixes. |
+| **Install/Uninstall Testing** | Ensures that the software installs, updates, and uninstalls correctly across environments. |
+
+---
+
+### ⚡ Category 4: Performance & Reliability Testing
+
+These tests examine how a system behaves under varying loads, stress conditions, and over time.
+
+| Testing Type | Description |
+|---|---|
+| **Performance Testing** | Assesses speed, stability, and resource usage of a system under a specified workload. |
+| **Load Testing** | Tests system behavior under expected and peak user load conditions. |
+| **Stress Testing** | Pushes the system beyond normal limits to find its breaking point. |
+| **Scalability Testing** | Tests the system's ability to scale up or down in response to increasing/decreasing workload. |
+| **Concurrent Testing** | Tests the software with multiple users or tasks running simultaneously. |
+| **Single User Performance Testing** | Establishes a performance baseline by testing with only one user. |
+| **Reliability Testing** ⭐ | Checks whether software can operate continuously without failure for a specific period under defined conditions. |
+| **Recovery Testing** | Ensures that a system can recover from crashes, hardware failures, or other major problems. |
+| **Failover Testing** ⭐ | Specifically tests the system's ability to automatically switch to a backup system or component when the primary one fails. |
+| **Disaster Recovery Testing** ⭐ | Validates that an organization can restore data and resume operations after a critical IT failure or complete disruption. |
+
+---
+
+### 🔐 Category 5: Security Testing
+
+These tests identify vulnerabilities and verify that the system protects data and resists attacks.
+
+| Testing Type | Description |
+|---|---|
+| **Security Testing** | Broadly identifies vulnerabilities and ensures data protection and system safety. |
+| **Penetration Testing (Pen Testing)** | Simulates a real-world attack on the system to assess its security posture. |
+| **Fuzz Testing (Fuzzing)** ⭐ | Feeds invalid, unexpected, or random data into inputs to uncover crashes, security holes, and edge-case bugs. Widely used in security research. |
+| **Chaos Testing (Chaos Engineering)** | Intentionally introduces failures into a live system to test its resilience and recovery capabilities. |
+
+---
+
+### 🌍 Category 6: Compatibility & Localization Testing
+
+These tests ensure the software works correctly across different environments, regions, and user populations.
+
+| Testing Type | Description |
+|---|---|
+| **Compatibility Testing** | Ensures the software works across different devices, browsers, and operating systems. |
+| **Accessibility Testing** | Ensures software is usable by people with disabilities (e.g., screen readers, keyboard-only navigation). |
+| **Localization Testing (L10n)** ⭐ | Verifies correct behavior for a *specific* locale — including date/time formats, currency symbols, and translated text. |
+| **Internationalization Testing (i18n)** ⭐ | Ensures the software can be adapted to *multiple* languages and regions without changes to the underlying source code. |
+| **Compliance / Regulatory Testing** ⭐ | Verifies that software adheres to required industry standards, laws, or regulations (e.g., HIPAA, GDPR, PCI-DSS). |
+
+---
+
+### 👤 Category 7: User Experience & Acceptance Testing
+
+These tests focus on whether the software is intuitive, useful, and meets real user needs.
+
+| Testing Type | Description |
+|---|---|
+| **Usability Testing** | Ensures the software is user-friendly, intuitive, and efficient to use. |
+| **A/B Testing** | Compares two versions of a system or feature to determine which performs better with real users. |
+| **Alpha Testing** | Internal testing by developers or QA teams before releasing to external users. |
+| **Beta Testing** | Testing performed by actual users in a real environment prior to general release. |
+| **Exploratory Testing** | Simultaneous learning, test design, and execution — driven by tester intuition rather than scripts. |
+| **Interactive Testing** | A human tester interacts directly with the application to uncover issues not captured by scripts. |
+| **Ad-hoc Testing** | Unstructured, informal testing performed without formal plans or test cases — often used to quickly probe suspected issues. |
+
+---
+
+### 🧪 Category 8: Specialized & Emerging Testing Types
+
+These are less common but increasingly important in modern software development.
+
+| Testing Type | Description |
+|---|---|
+| **Non-functional Testing** | An umbrella category that validates system *qualities* — performance, usability, reliability — rather than specific features. |
+| **Monkey Testing** ⭐ | Completely random, unguided inputs are sent to the system to see if it crashes or behaves unexpectedly. |
+| **Gorilla Testing** ⭐ | One particular module is tested exhaustively and repeatedly from every angle to ensure extreme robustness. |
+| **Operational Acceptance Testing (OAT)** ⭐ | Validates operational readiness before release — focusing on backup/restore, maintenance procedures, and system monitoring. |
+| **Shift-Left Testing** ⭐ | A methodology/philosophy of testing *earlier* in the SDLC (shifting left on the timeline) to catch defects sooner and reduce cost of change. |
+
+---
+
+> ⭐ = Types added beyond the original 35 in the course slides.
+
+> **How many testing types exist?** Industry sources catalog well over 100 named testing types, though many overlap or are context-specific variations of the categories above. The types listed here represent the most widely recognized and practically relevant ones for professional software engineering.
 
 ---
 
