@@ -49,7 +49,7 @@ These tests focus on *how* the code is built — its internal structure, logic, 
 | **Dynamic Testing** | Tests the software during actual execution to find runtime defects. |
 | **White Box Testing** | Tests internal structures or workings of an application with full code visibility. |
 | **Black Box Testing** | Tests functionality without any knowledge of internal code or logic. |
-| **Gray Box Testing** ⭐ | A hybrid approach — the tester has *partial* knowledge of internals, enabling more targeted tests while maintaining a user-centric perspective. |
+| **Gray Box Testing** | A hybrid approach — the tester has *partial* knowledge of internals, enabling more targeted tests while maintaining a user-centric perspective. |
 | **Mutation Testing** | Deliberately modifies ("mutates") source code to verify that test cases can detect the changes. |
 
 > **White vs. Black vs. Gray:** Think of it as how much the tester can "see inside the box." White = full visibility, Black = none, Gray = partial.
@@ -63,10 +63,10 @@ These tests verify that separately developed modules work correctly when combine
 | Testing Type | Description |
 |---|---|
 | **Integration Testing** | Ensures that different modules or components work together correctly. |
-| **Big Bang Integration Testing** ⭐ | All modules are combined at once and tested together after individual unit testing is complete. |
-| **Top-Down Integration Testing** ⭐ | High-level modules are tested first; lower-level modules are simulated using *stubs*. |
-| **Bottom-Up Integration Testing** ⭐ | Low-level modules are tested first; higher-level modules are simulated using *drivers*. |
-| **Contract Testing** ⭐ | Verifies that interactions between services (especially microservices or APIs) conform to a shared contract. Critical in distributed/cloud architectures. |
+| **Big Bang Integration Testing** | All modules are combined at once and tested together after individual unit testing is complete. |
+| **Top-Down Integration Testing** | High-level modules are tested first; lower-level modules are simulated using *stubs*. |
+| **Bottom-Up Integration Testing** | Low-level modules are tested first; higher-level modules are simulated using *drivers*. |
+| **Contract Testing** | Verifies that interactions between services (especially microservices or APIs) conform to a shared contract. Critical in distributed/cloud architectures. |
 | **End-to-End Testing** | Tests the entire application workflow from start to finish, simulating real user scenarios. |
 | **System Testing** | Validates the complete, fully integrated system to ensure it meets all specified requirements. |
 
@@ -80,7 +80,7 @@ These tests validate *what* the system does — whether features behave as speci
 |---|---|
 | **Functional Testing** | Verifies that the software functions as expected based on requirements. |
 | **Acceptance Testing** | Validates the system against business requirements before release. |
-| **User Acceptance Testing (UAT)** ⭐ | A formal subset of acceptance testing performed by *actual end-users* in their own environment to confirm the software meets their needs before go-live. |
+| **User Acceptance Testing (UAT)** | A formal subset of acceptance testing performed by *actual end-users* in their own environment to confirm the software meets their needs before go-live. |
 | **Regression Testing** | Ensures that new code changes haven't broken existing functionality. |
 | **Smoke Testing** | A quick, broad test to check if the build is stable enough for further testing. |
 | **Sanity Testing** | Targeted checks to confirm that specific functionality works correctly after minor code changes or bug fixes. |
@@ -100,10 +100,10 @@ These tests examine how a system behaves under varying loads, stress conditions,
 | **Scalability Testing** | Tests the system's ability to scale up or down in response to increasing/decreasing workload. |
 | **Concurrent Testing** | Tests the software with multiple users or tasks running simultaneously. |
 | **Single User Performance Testing** | Establishes a performance baseline by testing with only one user. |
-| **Reliability Testing** ⭐ | Checks whether software can operate continuously without failure for a specific period under defined conditions. |
+| **Reliability Testing** | Checks whether software can operate continuously without failure for a specific period under defined conditions. |
 | **Recovery Testing** | Ensures that a system can recover from crashes, hardware failures, or other major problems. |
-| **Failover Testing** ⭐ | Specifically tests the system's ability to automatically switch to a backup system or component when the primary one fails. |
-| **Disaster Recovery Testing** ⭐ | Validates that an organization can restore data and resume operations after a critical IT failure or complete disruption. |
+| **Failover Testing** | Specifically tests the system's ability to automatically switch to a backup system or component when the primary one fails. |
+| **Disaster Recovery Testing** | Validates that an organization can restore data and resume operations after a critical IT failure or complete disruption. |
 
 ---
 
@@ -115,7 +115,7 @@ These tests identify vulnerabilities and verify that the system protects data an
 |---|---|
 | **Security Testing** | Broadly identifies vulnerabilities and ensures data protection and system safety. |
 | **Penetration Testing (Pen Testing)** | Simulates a real-world attack on the system to assess its security posture. |
-| **Fuzz Testing (Fuzzing)** ⭐ | Feeds invalid, unexpected, or random data into inputs to uncover crashes, security holes, and edge-case bugs. Widely used in security research. |
+| **Fuzz Testing (Fuzzing)** | Feeds invalid, unexpected, or random data into inputs to uncover crashes, security holes, and edge-case bugs. Widely used in security research. |
 | **Chaos Testing (Chaos Engineering)** | Intentionally introduces failures into a live system to test its resilience and recovery capabilities. |
 
 ---
@@ -128,9 +128,9 @@ These tests ensure the software works correctly across different environments, r
 |---|---|
 | **Compatibility Testing** | Ensures the software works across different devices, browsers, and operating systems. |
 | **Accessibility Testing** | Ensures software is usable by people with disabilities (e.g., screen readers, keyboard-only navigation). |
-| **Localization Testing (L10n)** ⭐ | Verifies correct behavior for a *specific* locale — including date/time formats, currency symbols, and translated text. |
-| **Internationalization Testing (i18n)** ⭐ | Ensures the software can be adapted to *multiple* languages and regions without changes to the underlying source code. |
-| **Compliance / Regulatory Testing** ⭐ | Verifies that software adheres to required industry standards, laws, or regulations (e.g., HIPAA, GDPR, PCI-DSS). |
+| **Localization Testing (L10n)** | Verifies correct behavior for a *specific* locale — including date/time formats, currency symbols, and translated text. |
+| **Internationalization Testing (i18n)** | Ensures the software can be adapted to *multiple* languages and regions without changes to the underlying source code. |
+| **Compliance / Regulatory Testing** | Verifies that software adheres to required industry standards, laws, or regulations (e.g., HIPAA, GDPR, PCI-DSS). |
 
 ---
 
@@ -157,14 +157,14 @@ These are less common but increasingly important in modern software development.
 | Testing Type | Description |
 |---|---|
 | **Non-functional Testing** | An umbrella category that validates system *qualities* — performance, usability, reliability — rather than specific features. |
-| **Monkey Testing** ⭐ | Completely random, unguided inputs are sent to the system to see if it crashes or behaves unexpectedly. |
-| **Gorilla Testing** ⭐ | One particular module is tested exhaustively and repeatedly from every angle to ensure extreme robustness. |
-| **Operational Acceptance Testing (OAT)** ⭐ | Validates operational readiness before release — focusing on backup/restore, maintenance procedures, and system monitoring. |
-| **Shift-Left Testing** ⭐ | A methodology/philosophy of testing *earlier* in the SDLC (shifting left on the timeline) to catch defects sooner and reduce cost of change. |
+| **Monkey Testing** | Completely random, unguided inputs are sent to the system to see if it crashes or behaves unexpectedly. |
+| **Gorilla Testing** | One particular module is tested exhaustively and repeatedly from every angle to ensure extreme robustness. |
+| **Operational Acceptance Testing (OAT)** | Validates operational readiness before release — focusing on backup/restore, maintenance procedures, and system monitoring. |
+| **Shift-Left Testing** | A methodology/philosophy of testing *earlier* in the SDLC (shifting left on the timeline) to catch defects sooner and reduce cost of change. |
 
 ---
 
-> ⭐ = Types added beyond the original 35 in the course slides.
+> = Types added beyond the original 35 in the course slides.
 
 > **How many testing types exist?** Industry sources catalog well over 100 named testing types, though many overlap or are context-specific variations of the categories above. The types listed here represent the most widely recognized and practically relevant ones for professional software engineering.
 
