@@ -1,4 +1,4 @@
-# ICS 499 -- Assignment 2: DevOps Tool Exploration & Presentation
+# ICS 499 -- Assignment: DevOps Tool Exploration & Presentation
 
 ## Objective
 
