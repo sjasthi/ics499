@@ -1,4 +1,4 @@
-# ICS 499 — Assignment 3: AI / LLM Topic Exploration & Presentation
+# ICS 499 — Assignment: AI / LLM Topic Exploration & Presentation
 
 ## Objective
 
