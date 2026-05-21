@@ -686,3 +686,7 @@ For every video, course, or guide:
 * Compare ideas across multiple tools and models
 
 The goal is not only to learn AI concepts, but to develop engineering intuition and practical implementation experience.
+
+---
+
+Siva Jasthi   |  Founder, President, and Chief Instructor  @ Learn and Help (www.learnandhelp.com)  | siva.jasthi@gmail.com
