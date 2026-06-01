@@ -4,7 +4,7 @@
 
 ### Course
 
-Capstone Project
+ICS499 - Software Engineering and Capstone Project
 
 ### Duration
 
@@ -12,7 +12,7 @@ Capstone Project
 
 ### Points
 
-50 Points
+50 Points  (it is counted as "Assignment 2" + "FP1")
 
 ---
 
@@ -54,7 +54,7 @@ By completing this assignment, you should be able to:
 
 This is an AI-assisted assignment.
 
-You are encouraged to use:
+You are encouraged to use one or more of these AI tools.
 
 * ChatGPT
 * Claude
@@ -62,7 +62,7 @@ You are encouraged to use:
 * Perplexity
 * GitHub Copilot
 * Microsoft Copilot
-* Other approved AI tools
+
 
 You must document:
 
@@ -76,7 +76,7 @@ You must document:
 
 # Deliverables
 
-Create a GitHub repository containing:
+You need to submit a ZIP file containing the following:
 
 ```text
 exploring_crm_systems/
@@ -376,12 +376,9 @@ PHP Application Layer
 MySQL Database
 ```
 
-You may use:
-
-* Draw.io
-* Lucidchart
+You may use of of these tools:
 * Excalidraw
-* PowerPoint
+* Draw.io
 * Mermaid
 
 Include the diagram in your report.
