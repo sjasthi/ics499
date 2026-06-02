@@ -76,7 +76,9 @@ You must document:
 
 # Deliverables
 
-You need to submit a ZIP file containing the following:
+You need to submit a GITHUB link containing the following.
+You can submit the link at the end of the class today (6/1/26) and you continue to elaborate (or add more files/content) to the same repo during the week.
+The final submission is due on Saturday 6/6.
 
 ```text
 exploring_crm_systems/
