@@ -163,18 +163,3 @@ Instead:
 This philosophy is one of the key reasons Agile methodologies have become the dominant approach for software development organizations worldwide.
 
 ---
-
-# Suggested Images
-
-Include the following diagrams or infographics to enhance this document:
-
-1. Project Management Triangle (Scope–Resources–Schedule)
-2. Iron Triangle of Project Management
-3. Waterfall Development Lifecycle
-4. Agile Scrum Sprint Cycle
-5. Product Backlog → Sprint Backlog → Increment
-6. Definition of Done vs Acceptance Criteria
-7. Agile vs Waterfall Comparison Infographic
-8. Velocity and Burn-down Chart (illustrating fixed schedule and variable scope)
-
-Use images that are public domain, Creative Commons licensed, or appropriately attributed.
