@@ -8,7 +8,9 @@ Student Name:    ________________
        
 Final Project Iteration Number:     _____
 
-Reviewed the weekly progress with the instructor:  [ ] Yes   [  ] No
+I am present in the breakout room for this iteration:   [ ] Yes   [  ] No
+
+I reviewed the weekly progress with the instructor:  [ ] Yes   [  ] No
 
 
 Weekly Contribution:  Please provide a summary of your contributions to the project during this week. Be specific about tasks, responsibilities, and any challenges you encountered. Describe how your work benefited the overall team and project.
