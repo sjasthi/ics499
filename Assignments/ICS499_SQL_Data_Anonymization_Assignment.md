@@ -1,4 +1,5 @@
 # ICS 499 – Software Engineering and Capstone Project
+## Siva Jasthi (siva.jasthi@metrostate.edu) 
 
 ## Assignment: SQL Data Anonymization
 
