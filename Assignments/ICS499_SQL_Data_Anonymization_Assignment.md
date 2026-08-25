@@ -8,7 +8,7 @@
 
 Organizations frequently need to use production-like data for software development, testing, demonstrations, training, and analytics. However, copying real data into these environments can expose Personally Identifiable Information (PII).
 
-In this assignment, you will develop a program that **anonymizes sensitive information contained in a SQL file** while preserving the usefulness and structure of the data.
+In this assignment, you will develop a program that **anonymizes sensitive information contained in a SQL file** (You can assume that it is a MySQL file) while preserving the usefulness and structure of the data.
 
 You will be provided with a SQL file that may contain SQL statements such as `CREATE TABLE` and `INSERT` statements. Your primary focus is processing the **INSERT statements** and replacing sensitive information with realistic synthetic data.
 
