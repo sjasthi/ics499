@@ -2,7 +2,7 @@
 
 The following are intentionally **high-level project descriptions**. Your team is expected to understand the problem, identify the stakeholders and goals, elaborate the requirements, determine the scope, and propose an appropriate technical solution.
 
-## 1. OMDB – Online Movie Database
+## 1. OMDB – Online Movie Database- Version 2.0
 
 - Build an online movie database.
 - Maintain information about:
@@ -37,7 +37,7 @@ The following are intentionally **high-level project descriptions**. Your team i
 - Identify one or more matching profiles.
 - Provide a confidence/match score for each recommended match.
 
-## 5. RAG – Version 2.0
+## 5. RAG and RAG Evals – Version 2.0
 
 - Build an enhanced RAG system for prospective Metro State University students.
 - Support multiple users.
