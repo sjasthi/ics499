@@ -12,7 +12,7 @@ ICS499 - Software Engineering and Capstone Project
 
 ### Points
 
-50 Points  (it is counted as "Assignment 2" + "FP1")
+TBD
 
 ---
 
