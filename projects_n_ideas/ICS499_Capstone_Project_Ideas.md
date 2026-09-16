@@ -59,7 +59,7 @@ The following are intentionally **high-level project descriptions**. Your team i
 - Provide useful ways to visualize and navigate the dependency graph.
 - Allow users to explore relationships within the codebase.
 
-## 7. Play and Learn – Python 101, Version 2.0
+## 7&8. Play and Learn – Python 101, Version 2.0
 
 - Build an interactive course and quiz platform.
 - Use games or interactive activities to help students learn concepts.
@@ -68,7 +68,7 @@ The following are intentionally **high-level project descriptions**. Your team i
 - Provide useful feedback based on student performance.
 - Demonstrate the system using **Python 101** as the reference course.
 
-## 8. Play and Learn – Java 101, Version 2.0
+## 7&8. Play and Learn – Java 101, Version 2.0
 
 - Build an interactive course and quiz platform.
 - Use games or interactive activities to help students learn concepts.
